@@ -1,5 +1,6 @@
 package net.acetheeldritchking.aces_wyverns_and_dragons;
 
+import net.acetheeldritchking.aces_wyverns_and_dragons.block.ModBlocks;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,7 +32,11 @@ public class AcesWyvernsAndDragons
     public AcesWyvernsAndDragons() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // Mod Items
         ModItems.register(eventBus);
+
+        // Mod Blocks
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

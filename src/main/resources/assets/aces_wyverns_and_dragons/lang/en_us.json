@@ -1,5 +1,8 @@
 {
     "item.aces_wyverns_and_dragons.aurdite_ingot": "Aurdite Ingot",
     "item.aces_wyverns_and_dragons.aurdite_nugget": "Aurdite Nugget",
-    "item.aces_wyverns_and_dragons.raw_aurdite": "Raw Aurdite"
+    "item.aces_wyverns_and_dragons.raw_aurdite": "Raw Aurdite",
+
+    "block.aces_wyverns_and_dragons.aurdite_block": "Aurdite Block",
+    "block.aces_wyverns_and_dragons.aurdite_ore": "Aurdite Ore"
 }
