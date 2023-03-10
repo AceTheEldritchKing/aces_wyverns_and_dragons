@@ -1,6 +1,7 @@
 package net.acetheeldritchking.aces_wyverns_and_dragons.block;
 
 import net.acetheeldritchking.aces_wyverns_and_dragons.AcesWyvernsAndDragons;
+import net.acetheeldritchking.aces_wyverns_and_dragons.item.ModCreativeModTab;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,22 +23,22 @@ public class ModBlocks {
     // Aurdite Metal Block
     public static final RegistryObject<Block> AURDITE_BLOCK = registerBlock("aurdite_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
     // Aurdite Ore
     public static final RegistryObject<Block> AURDITE_ORE = registerBlock("aurdite_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
     // Deepslate Aurdite ore
     public static final RegistryObject<Block> DEEPSLATE_AURDITE_ORE = registerBlock("deepslate_aurdite_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
     // Raw Aurdite block
     public static final RegistryObject<Block> RAW_AURDITE_BLOCK = registerBlock("raw_aurdite_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
 
 

@@ -14,15 +14,15 @@ public class ModItems {
 
     // Aurdite Ingot
     public static final RegistryObject<Item> AURDITE_INGOT = ITEMS.register("aurdite_ingot",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB)));
 
     // Aurdite Nugget
     public static final RegistryObject<Item> AURDITE_NUGGET = ITEMS.register("aurdite_nugget",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB)));
 
     // Raw Aurdite
     public static final RegistryObject<Item> RAW_AURDITE = ITEMS.register("raw_aurdite",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB)));
 
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "aaa",
+        "aaa"
+    ],
+    "key": {
+        "a": {
+            "item": "aces_wyverns_and_dragons:aurdite_nugget"
+        }
+    },
+    "result": {
+        "item": "aces_wyverns_and_dragons:aurdite_ingot"
+    }
+}

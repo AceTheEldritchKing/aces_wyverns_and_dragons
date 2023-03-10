@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "aces_wyverns_and_dragons:raw_aurdite"
+    }
+  },
+  "result": {
+    "item": "aces_wyverns_and_dragons:raw_aurdite_block"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "aces_wyverns_and_dragons:deepslate_aurdite_ore"
+  },
+  "result": "aces_wyverns_and_dragons:aurdite_ingot",
+  "experience": 0.1,
+  "cookingtime": 200
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "aces_wyverns_and_dragons:raw_aurdite_block"
+        }
+    ],
+    "result": {
+        "item": "aces_wyverns_and_dragons:raw_aurdite",
+        "count": 9
+    }
+}

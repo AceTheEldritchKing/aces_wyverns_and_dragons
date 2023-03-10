@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "aces_wyverns_and_dragons:aurdite_ingot"
+        }
+    ],
+    "result": {
+        "item": "aces_wyverns_and_dragons:aurdite_nugget",
+        "count": 9
+    }
+}
