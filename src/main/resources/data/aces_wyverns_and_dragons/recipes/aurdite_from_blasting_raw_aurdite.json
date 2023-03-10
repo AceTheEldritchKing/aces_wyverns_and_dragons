@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "aces_wyverns_and_dragons:raw_aurdite"
+  },
+  "result": "aces_wyverns_and_dragons:aurdite_ingot",
+  "experience": 0.1,
+  "cookingtime": 100
+}

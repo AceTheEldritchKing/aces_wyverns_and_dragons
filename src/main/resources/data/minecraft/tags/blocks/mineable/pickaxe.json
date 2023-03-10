@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "aces_wyverns_and_dragons:aurdite_block",
+        "aces_wyverns_and_dragons:raw_aurdite_block",
+        "aces_wyverns_and_dragons:aurdite_ore",
+        "aces_wyverns_and_dragons:deepslate_aurdite_ore"
+    ]
+}
