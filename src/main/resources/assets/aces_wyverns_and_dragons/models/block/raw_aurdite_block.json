@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "aces_wyverns_and_dragons:block/raw_aurdite_block"
+    }
+}

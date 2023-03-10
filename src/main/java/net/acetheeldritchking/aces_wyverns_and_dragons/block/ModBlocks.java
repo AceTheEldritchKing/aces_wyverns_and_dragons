@@ -29,6 +29,16 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
 
+    // Deepslate Aurdite ore
+    public static final RegistryObject<Block> DEEPSLATE_AURDITE_ORE = registerBlock("deepslate_aurdite_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+
+    // Raw Aurdite block
+    public static final RegistryObject<Block> RAW_AURDITE_BLOCK = registerBlock("raw_aurdite_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+
 
 
     // Block Helper Methods/Funcs

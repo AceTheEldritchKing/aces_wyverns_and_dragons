@@ -4,5 +4,7 @@
     "item.aces_wyverns_and_dragons.raw_aurdite": "Raw Aurdite",
 
     "block.aces_wyverns_and_dragons.aurdite_block": "Aurdite Block",
-    "block.aces_wyverns_and_dragons.aurdite_ore": "Aurdite Ore"
+    "block.aces_wyverns_and_dragons.aurdite_ore": "Aurdite Ore",
+    "block.aces_wyverns_and_dragons.deepslate_aurdite_ore": "Deepslate Aurdite Ore",
+    "block.aces_wyverns_and_dragons.raw_aurdite_block": "Raw Aurdite Block"
 }
