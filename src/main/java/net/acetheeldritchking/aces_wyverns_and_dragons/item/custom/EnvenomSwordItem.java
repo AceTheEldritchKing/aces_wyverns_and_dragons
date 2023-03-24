@@ -17,6 +17,8 @@ public class EnvenomSwordItem extends SwordItem {
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
         // Gives target enemy poison effect
         pTarget.addEffect(new MobEffectInstance(MobEffects.POISON, 100), pAttacker);
+        // Gives user strength on hit
+        pAttacker.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100), pTarget);
         return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
 }
