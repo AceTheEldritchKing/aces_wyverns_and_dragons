@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "aces_wyverns_and_dragons:item/aurdite_hoe"
+  }
+}

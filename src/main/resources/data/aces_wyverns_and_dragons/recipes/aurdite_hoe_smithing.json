@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:netherite_hoe"
+    },
+    "addition": {
+        "item": "aces_wyverns_and_dragons:aurdite_ingot"
+    },
+    "result": {
+        "item": "aces_wyverns_and_dragons:aurdite_hoe"
+    }
+}
