@@ -1,0 +1,56 @@
+{
+    "parent": "minecraft:nether/netherite_armor",
+    "display": {
+        "icon": {
+            "item": "aces_wyverns_and_dragons:aurdite_chestplate",
+            "nbt": "{Damage:0}"
+        },
+        "title": {
+            "translate": "advancements.crafting.full_aurdite_armor.title"
+        },
+        "description": {
+            "translate": "advancements.crafting.full_aurdite_armor.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "criteria": {
+        "aurdite_armor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "aces_wyverns_and_dragons:aurdite_helmet"
+                        ]
+                    },
+                    {
+                        "items": [
+                            "aces_wyverns_and_dragons:aurdite_chestplate"
+                        ]
+                    },
+                    {
+                        "items": [
+                            "aces_wyverns_and_dragons:aurdite_leggings"
+                        ]
+                    },
+                    {
+                        "items": [
+                            "aces_wyverns_and_dragons:aurdite_boots"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "aurdite_armor"
+        ]
+    ]
+}

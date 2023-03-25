@@ -19,5 +19,7 @@
     "item.aces_wyverns_and_dragons.aurdite_leggings": "Aurdite Leggings",
     "item.aces_wyverns_and_dragons.aurdite_boots": "Aurdite Greaves",
 
-    "itemGroup.aces_wyverns_and_dragons_tab": "Aces Wyverns & Dragons"
+    "itemGroup.aces_wyverns_and_dragons_tab": "Aces Wyverns & Dragons",
+    "advancements.crafting.full_aurdite_armor.title": "Cover Me In Corrosion",
+    "advancements.crafting.full_aurdite_armor.description": "Get a full suit of Aurdite armor"
 }
