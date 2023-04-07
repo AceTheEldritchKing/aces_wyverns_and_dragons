@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "aces_wyverns_and_dragons:block/drakestone_brick_slab"
+        },
+        "type=double": {
+            "model": "aces_wyverns_and_dragons:block/drakestone_brick_slab"
+        },
+        "type=top": {
+            "model": "aces_wyverns_and_dragons:block/drakestone_brick_slab_top"
+        }
+    }
+}

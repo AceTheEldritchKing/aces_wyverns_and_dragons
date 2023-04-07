@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "d",
+        "d"
+    ],
+    "key": {
+        "d": {
+            "item": "aces_wyverns_and_dragons:drakestone_brick_slab"
+        }
+    },
+    "result": {
+        "item": "aces_wyverns_and_dragons:chiseled_drakestone"
+    }
+}

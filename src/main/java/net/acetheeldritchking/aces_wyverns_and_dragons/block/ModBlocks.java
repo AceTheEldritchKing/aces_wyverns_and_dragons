@@ -7,6 +7,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,18 +30,48 @@ public class ModBlocks {
     // Aurdite Ore
     public static final RegistryObject<Block> AURDITE_ORE = registerBlock("aurdite_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
     // Deepslate Aurdite ore
     public static final RegistryObject<Block> DEEPSLATE_AURDITE_ORE = registerBlock("deepslate_aurdite_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
     // Raw Aurdite block
     public static final RegistryObject<Block> RAW_AURDITE_BLOCK = registerBlock("raw_aurdite_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
+    // Drakestone Block
+    public static final RegistryObject<Block> DRAKESTONE = registerBlock("drakestone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+
+    // Drakestone Aurdite Ore
+    public static final RegistryObject<Block> DRAKESTONE_AURDITE_ORE = registerBlock("drakestone_aurdite_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+
+    // Drakestone Bricks
+    public static final RegistryObject<Block> DRAKESTONE_BRICKS = registerBlock("drakestone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+
+    // Chiseled Drakestone
+    public static final RegistryObject<Block> CHISELED_DRAKESTONE = registerBlock("chiseled_drakestone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+
+    // Drakestone Brick Stairs
+    public static final RegistryObject<Block> DRAKESTONE_BRICK_STAIRS = registerBlock("drakestone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.DRAKESTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
+
+    // Drakestone Brick Slabs
+    public static final RegistryObject<Block> DRAKESTONE_BRICK_SLAB = registerBlock("drakestone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB);
 
 
     // Block Helper Methods/Funcs

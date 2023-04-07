@@ -2,22 +2,26 @@
     "item.aces_wyverns_and_dragons.aurdite_ingot": "Aurdite Ingot",
     "item.aces_wyverns_and_dragons.aurdite_nugget": "Aurdite Nugget",
     "item.aces_wyverns_and_dragons.raw_aurdite": "Raw Aurdite",
-
-    "block.aces_wyverns_and_dragons.aurdite_block": "Aurdite Block",
-    "block.aces_wyverns_and_dragons.aurdite_ore": "Aurdite Ore",
-    "block.aces_wyverns_and_dragons.deepslate_aurdite_ore": "Deepslate Aurdite Ore",
-    "block.aces_wyverns_and_dragons.raw_aurdite_block": "Raw Aurdite Block",
-
     "item.aces_wyverns_and_dragons.aurdite_sword": "Aurdite Sword",
     "item.aces_wyverns_and_dragons.aurdite_pickaxe": "Aurdite Pickaxe",
     "item.aces_wyverns_and_dragons.aurdite_shovel": "Aurdite Shovel",
     "item.aces_wyverns_and_dragons.aurdite_axe": "Aurdite Axe",
     "item.aces_wyverns_and_dragons.aurdite_hoe": "Aurdite Hoe",
-
     "item.aces_wyverns_and_dragons.aurdite_helmet": "Aurdite Helmet",
     "item.aces_wyverns_and_dragons.aurdite_chestplate": "Aurdite Chestplate",
     "item.aces_wyverns_and_dragons.aurdite_leggings": "Aurdite Leggings",
     "item.aces_wyverns_and_dragons.aurdite_boots": "Aurdite Greaves",
+
+    "block.aces_wyverns_and_dragons.aurdite_block": "Aurdite Block",
+    "block.aces_wyverns_and_dragons.aurdite_ore": "Aurdite Ore",
+    "block.aces_wyverns_and_dragons.deepslate_aurdite_ore": "Deepslate Aurdite Ore",
+    "block.aces_wyverns_and_dragons.raw_aurdite_block": "Raw Aurdite Block",
+    "block.aces_wyverns_and_dragons.drakestone_aurdite_ore": "Drakestone Aurdite Ore",
+    "block.aces_wyverns_and_dragons.drakestone": "Drakestone",
+    "block.aces_wyverns_and_dragons.drakestone_bricks": "Drakestone Bricks",
+    "block.aces_wyverns_and_dragons.chiseled_drakestone": "Chiseled Drakestone",
+    "block.aces_wyverns_and_dragons.drakestone_brick_stairs": "Drakestone Brick Stairs",
+    "block.aces_wyverns_and_dragons.drakestone_brick_slab": "Drakestone Brick Slab",
 
     "itemGroup.aces_wyverns_and_dragons_tab": "Aces Wyverns & Dragons",
     "advancements.crafting.full_aurdite_armor.title": "Cover Me In Corrosion",

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "aces_wyverns_and_dragons:drakestone"
+    },
+    "result": "aces_wyverns_and_dragons:chiseled_drakestone",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "aces_wyverns_and_dragons:block/drakestone_bricks",
+    "top": "aces_wyverns_and_dragons:block/drakestone_bricks",
+    "side": "aces_wyverns_and_dragons:block/drakestone_bricks"
+  }
+}

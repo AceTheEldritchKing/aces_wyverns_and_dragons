@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "aces_wyverns_and_dragons:drakestone_bricks"
+    },
+    "result": "aces_wyverns_and_dragons:drakestone_brick_slab",
+    "count": 2
+}

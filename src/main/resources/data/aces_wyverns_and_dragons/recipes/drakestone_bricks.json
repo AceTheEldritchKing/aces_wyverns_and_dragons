@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "dd",
+        "dd"
+    ],
+    "key": {
+        "d": {
+            "item": "aces_wyverns_and_dragons:drakestone"
+        }
+    },
+    "result": {
+        "item": "aces_wyverns_and_dragons:drakestone_bricks",
+        "count": 4
+    }
+}

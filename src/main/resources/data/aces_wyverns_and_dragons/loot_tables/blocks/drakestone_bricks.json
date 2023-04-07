@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "aces_wyverns_and_dragons:drakestone_bricks"
+                }
+            ]
+        }
+    ]
+}

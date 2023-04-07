@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ddd"
+    ],
+    "key": {
+        "d": {
+            "item": "aces_wyverns_and_dragons:drakestone_bricks"
+        }
+    },
+    "result": {
+        "item": "aces_wyverns_and_dragons:drakestone_brick_slab",
+        "count": 6
+    }
+}
