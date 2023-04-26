@@ -103,6 +103,13 @@ public class GreenWyvernEntity extends AbstractDraconicEntity implements IAnimat
         return !this.onGround;
     }
 
+    public boolean causeFallDamage(float pFallDistance, float pMultiplier, DamageSource pSource) {
+        return false;
+    }
+
+    protected void checkFallDamage(double pY, boolean pOnGround, BlockState pState, BlockPos pPos) {
+    }
+
     // ANIMATIONS
     @Override
     public void registerControllers(AnimationData data) {
