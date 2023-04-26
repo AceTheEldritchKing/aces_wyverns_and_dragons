@@ -64,7 +64,7 @@ public class GreenWyvernEntity extends AbstractDraconicEntity implements IAnimat
         this.goalSelector.addGoal(3, new WaterAvoidingRandomFlyingGoal(this, 1.0D));
         this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
         this.huntTargetGoal = new NearestAttackableTargetGoal<>(
-                this, Animal.class, 10, true, false,
+                this, Animal.class, 10, false, false,
                 (pTargetPredicate) -> { return pTargetPredicate instanceof Chicken || pTargetPredicate instanceof Rabbit;
                 }
         );
