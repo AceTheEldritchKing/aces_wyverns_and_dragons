@@ -5,9 +5,9 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -89,6 +89,24 @@ public class GreenWyvernEntity extends AbstractDraconicEntity implements IAnimat
 
     protected float getSoundVolume() {
         return 0.2F;
+    }
+
+    // DAMAGE!!!
+    // Gives poison effect upon hitting target
+    @Override
+    public boolean doHurtTarget(Entity pEntity) {
+        if (!super.doHurtTarget(pEntity))
+        {
+            return false;
+        } else {
+            if (pEntity instanceof LivingEntity)
+            {
+                ((LivingEntity)pEntity).addEffect(new MobEffectInstance
+                        (MobEffects.POISON, 100), this);
+            }
+
+            return true;
+        }
     }
 
     // Other Stuff
