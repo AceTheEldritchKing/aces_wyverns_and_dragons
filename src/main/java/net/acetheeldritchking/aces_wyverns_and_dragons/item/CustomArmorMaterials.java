@@ -3,10 +3,8 @@ package net.acetheeldritchking.aces_wyverns_and_dragons.item;
 import net.acetheeldritchking.aces_wyverns_and_dragons.AcesWyvernsAndDragons;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.util.Lazy;
 
@@ -16,7 +14,7 @@ public enum CustomArmorMaterials implements ArmorMaterial {
 
     AURDITE("aurdite", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ARMOR_EQUIP_NETHERITE,
             3.5F, 0.1F, () -> {
-        return Ingredient.of(ModItems.AURDITE_INGOT.get());
+        return Ingredient.of(WDItems.AURDITE_INGOT.get());
     });
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};

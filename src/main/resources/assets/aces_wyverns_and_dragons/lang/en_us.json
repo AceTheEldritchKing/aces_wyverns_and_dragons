@@ -11,6 +11,7 @@
     "item.aces_wyverns_and_dragons.aurdite_chestplate": "Aurdite Chestplate",
     "item.aces_wyverns_and_dragons.aurdite_leggings": "Aurdite Leggings",
     "item.aces_wyverns_and_dragons.aurdite_boots": "Aurdite Greaves",
+    "item.aces_wyverns_and_dragons.wyrmroot": "Wyrmroot",
 
     "block.aces_wyverns_and_dragons.aurdite_block": "Aurdite Block",
     "block.aces_wyverns_and_dragons.aurdite_ore": "Aurdite Ore",
@@ -22,6 +23,7 @@
     "block.aces_wyverns_and_dragons.chiseled_drakestone": "Chiseled Drakestone",
     "block.aces_wyverns_and_dragons.drakestone_brick_stairs": "Drakestone Brick Stairs",
     "block.aces_wyverns_and_dragons.drakestone_brick_slab": "Drakestone Brick Slab",
+    "block.aces_wyverns_and_dragons.wyrmroot_crop": "Wyrmroot Crop",
 
     "itemGroup.aces_wyverns_and_dragons_tab": "Aces Wyverns & Dragons",
     "advancements.crafting.full_aurdite_armor.title": "Cover Me In Corrosion",

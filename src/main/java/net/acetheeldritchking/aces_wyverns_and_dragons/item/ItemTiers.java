@@ -8,5 +8,5 @@ public class ItemTiers {
     // Tier for Aurdite
     public static final ForgeTier AURDITE = new ForgeTier
             (4, 2632, 9.5F, 5.0F, 20,
-                    BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(ModItems.AURDITE_INGOT.get()));
+                    BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(WDItems.AURDITE_INGOT.get()));
 }

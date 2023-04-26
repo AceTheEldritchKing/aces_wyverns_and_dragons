@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/crop",
+    "textures": {
+        "crop": "aces_wyverns_and_dragons:block/wyrm_root_stage3"
+    }
+}
