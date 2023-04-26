@@ -2,10 +2,12 @@ package net.acetheeldritchking.aces_wyverns_and_dragons.item;
 
 import net.acetheeldritchking.aces_wyverns_and_dragons.AcesWyvernsAndDragons;
 import net.acetheeldritchking.aces_wyverns_and_dragons.block.WDBlocks;
+import net.acetheeldritchking.aces_wyverns_and_dragons.entity.WDEntityTypes;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.custom.EnvenomAxeItem;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.custom.EnvenomSwordItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -72,6 +74,13 @@ public class WDItems {
     public static final RegistryObject<Item> WYRMROOT = ITEMS.register("wyrmroot",
             () -> new ItemNameBlockItem(WDBlocks.WYRMROOT_CROP_BLOCK.get(), new Item.Properties()
                     .tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB).food(FoodItems.WYRMROOT)));
+
+    // Spawn Eggs
+    // Green Wyvern
+    public static final RegistryObject<ForgeSpawnEggItem> GREEN_WYVERN_SPAWN_EGG =
+            ITEMS.register("green_wyvern_spawn_egg", () ->
+                    new ForgeSpawnEggItem(WDEntityTypes.GREEN_WYVERN, 0x25b53c, 0x96b546,
+                            new Item.Properties().tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB)));
 
 
     public static void register(IEventBus eventBus) {

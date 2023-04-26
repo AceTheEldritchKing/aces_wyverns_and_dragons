@@ -1,9 +1,12 @@
 package net.acetheeldritchking.aces_wyverns_and_dragons;
 
 import net.acetheeldritchking.aces_wyverns_and_dragons.block.WDBlocks;
+import net.acetheeldritchking.aces_wyverns_and_dragons.entity.WDEntityTypes;
+import net.acetheeldritchking.aces_wyverns_and_dragons.entity.client.GreenWyvernRenderer;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.WDItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,6 +35,9 @@ public class AcesWyvernsAndDragons
         // Mod Blocks
         WDBlocks.register(eventBus);
 
+        // Entities
+        WDEntityTypes.register(eventBus);
+
         eventBus.addListener(this::setup);
         // Client Rendering
         eventBus.addListener(this::clientSetup);
@@ -46,6 +52,10 @@ public class AcesWyvernsAndDragons
         // Crop Blocks
         ItemBlockRenderTypes.setRenderLayer(WDBlocks.WYRMROOT_CROP_BLOCK.get(),
                 RenderType.cutout());
+
+        // Entities
+        // Green Wyvern
+        EntityRenderers.register(WDEntityTypes.GREEN_WYVERN.get(), GreenWyvernRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event)
