@@ -27,7 +27,7 @@ public enum CustomArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Lazy<Ingredient> repairIngredient;
 
-    private CustomArmorMaterials(String pName, int pDurabilityMultiplier, int[] pSlotProtections,
+    CustomArmorMaterials(String pName, int pDurabilityMultiplier, int[] pSlotProtections,
                                  int pEnchantmentValue, SoundEvent pSound,
                                  float pToughness, float pKnockbackResistance,
                                  Supplier<Ingredient> pRepairIngredient) {

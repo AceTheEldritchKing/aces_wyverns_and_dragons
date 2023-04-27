@@ -4,6 +4,7 @@ import net.acetheeldritchking.aces_wyverns_and_dragons.block.WDBlocks;
 import net.acetheeldritchking.aces_wyverns_and_dragons.entity.WDEntityTypes;
 import net.acetheeldritchking.aces_wyverns_and_dragons.entity.client.GreenWyvernRenderer;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.WDItems;
+import net.acetheeldritchking.aces_wyverns_and_dragons.sounds.WDSounds;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -34,6 +35,9 @@ public class AcesWyvernsAndDragons
 
         // Mod Blocks
         WDBlocks.register(eventBus);
+
+        // Sounds
+        WDSounds.register(eventBus);
 
         // Entities
         WDEntityTypes.register(eventBus);

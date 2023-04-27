@@ -13,6 +13,9 @@
     "item.aces_wyverns_and_dragons.aurdite_boots": "Aurdite Greaves",
     "item.aces_wyverns_and_dragons.wyrmroot": "Wyrmroot",
 
+    "item.aces_wyverns_and_dragons.music_disc_where_are_we_now": "§bMusic Disc§r",
+    "item.aces_wyverns_and_dragons.music_disc_where_are_we_now.desc": "Eldritch King - Where Are We Now? ",
+
     "item.aces_wyverns_and_dragons.green_wyvern_spawn_egg": "Green Wyvern Spawn Egg",
 
     "block.aces_wyverns_and_dragons.aurdite_block": "Aurdite Block",
@@ -31,5 +34,6 @@
 
     "itemGroup.aces_wyverns_and_dragons_tab": "Aces Wyverns & Dragons",
     "advancements.crafting.full_aurdite_armor.title": "Cover Me In Corrosion",
-    "advancements.crafting.full_aurdite_armor.description": "Get a full suit of Aurdite armor"
+    "advancements.crafting.full_aurdite_armor.description": "Get a full suit of Aurdite armor",
+    "aces_wyverns_and_dragons.where_are_we_now": "Now Playing - Where Are We Now?"
 }

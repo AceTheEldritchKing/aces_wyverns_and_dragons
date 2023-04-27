@@ -1,0 +1,11 @@
+{
+    "where_are_we_now": {
+        "subtitle": "aces_wyverns_and_dragons.where_are_we_now",
+        "sounds": [
+            {
+                "name": "aces_wyverns_and_dragons:where_are_we_now",
+                "stream": true
+            }
+        ]
+    }
+}

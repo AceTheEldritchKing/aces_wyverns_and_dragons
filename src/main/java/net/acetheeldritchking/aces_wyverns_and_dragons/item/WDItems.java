@@ -5,6 +5,7 @@ import net.acetheeldritchking.aces_wyverns_and_dragons.block.WDBlocks;
 import net.acetheeldritchking.aces_wyverns_and_dragons.entity.WDEntityTypes;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.custom.EnvenomAxeItem;
 import net.acetheeldritchking.aces_wyverns_and_dragons.item.custom.EnvenomSwordItem;
+import net.acetheeldritchking.aces_wyverns_and_dragons.sounds.WDSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -81,6 +82,12 @@ public class WDItems {
             ITEMS.register("green_wyvern_spawn_egg", () ->
                     new ForgeSpawnEggItem(WDEntityTypes.GREEN_WYVERN, 0x25b53c, 0x96b546,
                             new Item.Properties().tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB)));
+
+    // Music Discs
+    // Where Are We Now?
+    public static final RegistryObject<Item> WHERE_ARE_WE_NOW_RECORD = ITEMS.register("music_disc_where_are_we_now",
+            () -> new RecordItem(3, WDSounds.WHERE_ARE_WE_NOW,
+                    new Item.Properties().tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {
