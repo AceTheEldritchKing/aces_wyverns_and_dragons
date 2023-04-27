@@ -1,13 +1,11 @@
 package net.acetheeldritchking.aces_wyverns_and_dragons.world.gen;
 
 import net.acetheeldritchking.aces_wyverns_and_dragons.entity.WDEntityTypes;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class WDEntityGeneration {
@@ -17,7 +15,7 @@ public class WDEntityGeneration {
         addEntityToAllOverworldBiomes(event, WDEntityTypes.GREEN_WYVERN.get(), 100, 1, 2);
     }
 
-    // Entity Gen to all biomes
+    // Entity Gen to overworld biomes
     private static void addEntityToAllOverworldBiomes(BiomeLoadingEvent event,
                                                       EntityType<?> type,
                                                       int weight, int minCount, int maxCount)
@@ -28,7 +26,7 @@ public class WDEntityGeneration {
         }
     }
 
-
+    // Adds entities to selected biomes
     private static void addEntityToAllBiomes (BiomeLoadingEvent event,
                                               EntityType<?> type,
                                               int weight, int minCount, int maxCount)
