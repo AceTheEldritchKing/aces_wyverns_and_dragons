@@ -1,6 +1,7 @@
 package net.acetheeldritchking.aces_wyverns_and_dragons.world;
 
 import net.acetheeldritchking.aces_wyverns_and_dragons.AcesWyvernsAndDragons;
+import net.acetheeldritchking.aces_wyverns_and_dragons.world.gen.WDEntityGeneration;
 import net.acetheeldritchking.aces_wyverns_and_dragons.world.gen.WDOreGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,6 +15,9 @@ public class WDWorldEvents {
     {
         // Ores & Stones
         WDOreGeneration.generateOres(event);
+
+        // Entities
+        WDEntityGeneration.onEntitySpawn(event);
     }
 
 }

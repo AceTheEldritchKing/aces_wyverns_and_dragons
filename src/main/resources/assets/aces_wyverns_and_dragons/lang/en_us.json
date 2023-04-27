@@ -27,6 +27,8 @@
     "block.aces_wyverns_and_dragons.drakestone_brick_slab": "Drakestone Brick Slab",
     "block.aces_wyverns_and_dragons.wyrmroot_crop": "Wyrmroot Crop",
 
+    "entity.aces_wyverns_and_dragons.green_wyvern": "Green Wyvern",
+
     "itemGroup.aces_wyverns_and_dragons_tab": "Aces Wyverns & Dragons",
     "advancements.crafting.full_aurdite_armor.title": "Cover Me In Corrosion",
     "advancements.crafting.full_aurdite_armor.description": "Get a full suit of Aurdite armor"

@@ -17,10 +17,10 @@ public class WDEntityTypes {
 
     // Green Wyvern
     public static final RegistryObject<EntityType<GreenWyvernEntity>> GREEN_WYVERN =
-            ENTITY_TYPES.register("green_wyern", () -> EntityType.Builder.of
+            ENTITY_TYPES.register("green_wyvern", () -> EntityType.Builder.of
                     (GreenWyvernEntity::new, MobCategory.CREATURE).
                     // Bounding Box
-                    sized(0.9f, 0.7f).build(new
+                    sized(0.9f, 1f).build(new
                             ResourceLocation(AcesWyvernsAndDragons.MOD_ID,
                             "green_wyvern").toString()));
 
