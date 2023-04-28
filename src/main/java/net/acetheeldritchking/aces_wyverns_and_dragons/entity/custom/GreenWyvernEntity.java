@@ -24,6 +24,7 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.scores.Team;
@@ -107,6 +108,7 @@ public class GreenWyvernEntity extends AbstractDraconicEntity implements IAnimat
         this.goalSelector.addGoal(3, new WaterAvoidingRandomFlyingGoal(this, 1.0D));
         this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1, true));
+        this.goalSelector.addGoal(4, new TemptGoal(this, 1.0D, Ingredient.of(WDItems.WYRMROOT.get()), false));
         // If owner gets hurt
         this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
         // If owner hurts another entity
@@ -114,7 +116,7 @@ public class GreenWyvernEntity extends AbstractDraconicEntity implements IAnimat
         this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
         // Attack Player if hit
         this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>
-                (this, Player.class, 10, true, false, this::isAngryAt));
+                (this, Player.class, 10, false, false, this::isAngryAt));
         // Allows Wyvern to hunt down specified mobs
         this.targetSelector.addGoal(5, new NonTameRandomTargetGoal<>
                 (this, Animal.class, false, PREY_SELECTOR));
@@ -239,13 +241,36 @@ public class GreenWyvernEntity extends AbstractDraconicEntity implements IAnimat
 
         // Taming Mechs
         // If is not tamed or angry
-        if (item == itemToTame && !isTame() && !this.isAngry())
+        if (this.level.isClientSide)
         {
-            if (this.level.isClientSide)
+            boolean flag = this.isOwnedBy(pPlayer) ||
+                    this.isTame() ||
+                    item == itemToTame && !this.isTame() && !this.isAngry();
+            // Removes item in inventory when right-clicked
+            // Ternary Operator
+            // Makes a pass if the item for taming is used again if entity is tamed
+            // Pass is essentially like a break
+            return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
+        } else {
+            if (this.isTame())
             {
-                // Removes item in inventory when right-clicked
-                return InteractionResult.CONSUME;
-            } else {
+                if (pHand == InteractionHand.MAIN_HAND)
+                {
+                    setSitting(!isSitting());
+                }
+
+                if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth())
+                {
+                    if (!pPlayer.getAbilities().instabuild)
+                    {
+                        itemstack.shrink(1);
+                    }
+
+                    this.heal((float) item.getFoodProperties().getNutrition());
+                    return InteractionResult.SUCCESS;
+                }
+            } else if (item == itemToTame && !this.isAngry())
+            {
                 // If not in Creative, do this
                 if (!pPlayer.getAbilities().instabuild && !this.isAngry())
                 {
@@ -266,25 +291,23 @@ public class GreenWyvernEntity extends AbstractDraconicEntity implements IAnimat
                         this.level.broadcastEntityEvent(this, (byte)7);
                         setSitting(true);
                     }
+                    return InteractionResult.SUCCESS;
                 }
-
-                return InteractionResult.SUCCESS;
             }
         }
-
         // Once tamed, and on server
         // Makes sure to only use main hand for commands
-        if (isTame() && !this.level.isClientSide && pHand == InteractionHand.MAIN_HAND)
+        /*if (isTame() && !this.level.isClientSide && pHand == InteractionHand.MAIN_HAND)
         {
             setSitting(!isSitting());
             return InteractionResult.SUCCESS;
-        }
+        }*/
 
         // Makes a pass if the item for taming is used again
-        if (itemstack.getItem() == itemToTame)
+        /*if (itemstack.getItem() == itemToTame)
         {
             return InteractionResult.PASS;  // Sorta like a break
-        }
+        }*/
 
         return super.mobInteract(pPlayer, pHand);
     }
