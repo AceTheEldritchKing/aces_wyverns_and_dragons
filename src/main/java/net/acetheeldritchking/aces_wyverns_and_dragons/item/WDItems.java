@@ -75,6 +75,10 @@ public class WDItems {
     public static final RegistryObject<Item> WYRMROOT = ITEMS.register("wyrmroot",
             () -> new ItemNameBlockItem(WDBlocks.WYRMROOT_CROP_BLOCK.get(), new Item.Properties()
                     .tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB).food(FoodItems.WYRMROOT)));
+    // Cooked Wyrmroot
+    public static final RegistryObject<Item> COOKED_WYRMROOT = ITEMS.register("cooked_wyrmroot",
+            () -> new Item(new Item.Properties().tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB)
+                    .food(FoodItems.COOKED_WYRMROOT)));
 
     // Spawn Eggs
     // Green Wyvern
@@ -88,6 +92,12 @@ public class WDItems {
     public static final RegistryObject<Item> WHERE_ARE_WE_NOW_RECORD = ITEMS.register("music_disc_where_are_we_now",
             () -> new RecordItem(3, WDSounds.WHERE_ARE_WE_NOW,
                     new Item.Properties().tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB).stacksTo(1)));
+
+    // Scales
+    // Green Wyvern Scale
+    public static final RegistryObject<Item> GREEN_WYVERN_SCALE = ITEMS.register("green_wyvern_scale",
+            () -> new Item(new Item.Properties().tab(WDCreativeModTab.ACES_WYVERNS_AND_DRAGONS_TAB).fireResistant()
+                    .stacksTo(16)));
 
 
     public static void register(IEventBus eventBus) {

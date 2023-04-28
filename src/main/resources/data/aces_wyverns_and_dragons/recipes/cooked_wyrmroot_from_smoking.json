@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "aces_wyverns_and_dragons:wyrmroot"
+  },
+  "result": "aces_wyverns_and_dragons:cooked_wyrmroot",
+  "experience": 0.1,
+  "cookingtime": 100
+}

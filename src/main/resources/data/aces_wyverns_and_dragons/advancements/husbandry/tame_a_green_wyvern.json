@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "aces_wyverns_and_dragons:green_wyvern_scale"
+        },
+        "title": {
+            "translate": "advancements.husbandry.tame_a_green_wyvern.title"
+        },
+        "description": {
+            "translate": "advancements.husbandry.tame_a_green_wyvern.description"
+        },
+        "frame": "goal",
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:husbandry/tame_an_animal",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "aces_wyverns_and_dragons:green_wyvern"
+                }
+            }
+        }
+    }
+}
